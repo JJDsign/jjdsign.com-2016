@@ -1,0 +1,1418 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,600,800);
+@import url(http://fonts.googleapis.com/css?family=Economica:400italic,700italic);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+/* line 5, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, c:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../../components/sass/_base.scss */
+body {
+  font: 300 1em/1.5em "Exo 2", "Helvetica Neue", Arial, sans-serif;
+  background: #1a1a1a;
+  color: #FFFFFF;
+}
+
+/* line 7, ../../../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font: 300 1.5em/1.5em "Exo 2", "Helvetica Neue", Arial, sans-serif;
+  color: #0d0d0d;
+  font-weight: 600;
+}
+
+/* line 13, ../../../components/sass/_base.scss */
+strong {
+  font-weight: 600;
+}
+
+/* line 17, ../../../components/sass/_base.scss */
+p {
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+/* line 1, ../../../components/sass/_layout.scss */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, ../../../components/sass/_layout.scss */
+.scene {
+  position: relative;
+  padding: 20px 0;
+}
+/* line 11, ../../../components/sass/_layout.scss */
+.scene article {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.scene article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  /* line 7, ../../../components/sass/_layout.scss */
+  .scene {
+    padding: 40px 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 21, ../../../components/sass/_layout.scss */
+  .scene article {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  .scene article:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* line 2, ../../../components/sass/modules/_intro.scss */
+header .fullheight {
+  background: url("../images/background/intro.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 7, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup {
+  width: 100%;
+  height: 100%;
+}
+/* line 10, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h1 {
+  margin-top: 20px;
+  color: #0da6e0;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: .8em;
+  text-align: center;
+  text-shadow: #005b82 2px 2px 0px;
+}
+/* line 19, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h2 {
+  display: block;
+  color: #0da6e0;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #0da6e0;
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 1.3em;
+}
+/* line 32, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup p {
+  margin: 10px 0;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 39, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup p a i {
+  color: #0da6e0;
+  text-shadow: #005b82 3px 3px 0px;
+}
+
+/* line 1, ../../../components/sass/modules/_navigation.scss */
+header #nav {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkYTZlMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE1YjVmMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0da6e0), color-stop(100%, #15b5f1));
+  background-image: -moz-linear-gradient(top, #0da6e0, #15b5f1);
+  background-image: -webkit-linear-gradient(top, #0da6e0, #15b5f1);
+  background-image: linear-gradient(to bottom, #0da6e0, #15b5f1);
+  width: 100%;
+  z-index: 100;
+  height: 69px;
+  border-bottom: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+header #nav:before, header #nav:after {
+  content: '';
+  display: table;
+}
+/* line 40, ../../../components/sass/_mixins.scss */
+header #nav:after {
+  clear: both;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 1, ../../../components/sass/modules/_navigation.scss */
+  header #nav {
+    width: 100%;
+    height: auto;
+    border-bottom: 0;
+    line-height: 50px;
+  }
+}
+/* line 17, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+header #nav .navbar:before, header #nav .navbar:after {
+  content: '';
+  display: table;
+}
+/* line 40, ../../../components/sass/_mixins.scss */
+header #nav .navbar:after {
+  clear: both;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+header #nav .navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 20, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar span#logo {
+  font-weight: 800;
+  font-size: 1.2em;
+  float: left;
+  line-height: 70px;
+  text-indent: 25px;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 20, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar span#logo {
+    display: none;
+  }
+}
+/* line 30, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  height: 70px;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 30, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar ul {
+    float: left;
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+}
+/* line 41, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar ul li {
+  display: block;
+  float: left;
+}
+/* line 44, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar ul li.top {
+  display: none;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 41, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar ul li {
+    width: 100%;
+    float: left;
+    position: relative;
+    border-bottom: 1px solid #262626;
+  }
+}
+/* line 54, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar ul li a {
+  color: #e6e6e6;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+@media (min-width: 650px) {
+  /* line 54, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar ul li a {
+    height: 70px;
+    padding: 13px 15px 0 15px;
+  }
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 54, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar ul li a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #2e2e2e;
+  }
+}
+/* line 74, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar ul li a.active span, header #nav .navbar ul li a.active i {
+  color: #FFFFFF;
+}
+/* line 79, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar ul li a i {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 79, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar ul li a i {
+    display: none;
+  }
+}
+/* line 91, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar ul li a span {
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-size: .8em;
+  height: 24px;
+  font-weight: 300;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 91, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar ul li a span {
+    height: 50px;
+    font-size: 1em;
+  }
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 107, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar ul #home {
+    display: none;
+  }
+}
+/* line 113, ../../../components/sass/modules/_navigation.scss */
+header #nav .navbar #pull {
+  display: none;
+  text-indent: 25px;
+  color: #FFF;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 113, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar #pull {
+    display: block;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkYTZlMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE1YjVmMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0da6e0), color-stop(100%, #15b5f1));
+    background-image: -moz-linear-gradient(top, #0da6e0, #15b5f1);
+    background-image: -webkit-linear-gradient(top, #0da6e0, #15b5f1);
+    background-image: linear-gradient(to bottom, #0da6e0, #15b5f1);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    float: left;
+  }
+  /* line 128, ../../../components/sass/modules/_navigation.scss */
+  header #nav .navbar #pull::after {
+    content: "";
+    background: url(../images/icons/nav-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+/* line 1, ../../../components/sass/modules/_welcome.scss */
+#welcome {
+  padding: 0;
+}
+/* line 7, ../../../components/sass/modules/_welcome.scss */
+#welcome .parallax {
+  background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0)), url("../images/background/amsterdam1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 13, ../../../components/sass/modules/_welcome.scss */
+#welcome article {
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#welcome article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 13, ../../../components/sass/modules/_welcome.scss */
+  #welcome article {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  #welcome article:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 23, ../../../components/sass/modules/_welcome.scss */
+#welcome h2 {
+  font-weight: normal;
+  line-height: 100%;
+  color: #cccccc;
+  padding: 10px 0;
+}
+/* line 29, ../../../components/sass/modules/_welcome.scss */
+#welcome #welcome-image {
+  line-height: 0;
+  text-align: center;
+}
+/* line 32, ../../../components/sass/modules/_welcome.scss */
+#welcome #welcome-image img {
+  padding: 50px 0 0 0;
+  max-width: 430px;
+  width: 100%;
+}
+
+/* line 1, ../../../components/sass/modules/_about.scss */
+#about {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZTZlNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: linear-gradient(to bottom, #e6e6e6, #ffffff);
+  color: #003145;
+  padding: 20px 0 50px 0;
+}
+/* line 5, ../../../components/sass/modules/_about.scss */
+#about h1, #about h2, #about h3, #about h4, #about h5, #about h6 {
+  color: #005b82;
+}
+/* line 10, ../../../components/sass/modules/_about.scss */
+#about .heading h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+/* line 16, ../../../components/sass/modules/_about.scss */
+#about #aboutwrapper {
+  overflow: hidden;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+#about #aboutwrapper:before, #about #aboutwrapper:after {
+  content: '';
+  display: table;
+}
+/* line 40, ../../../components/sass/_mixins.scss */
+#about #aboutwrapper:after {
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 20, ../../../components/sass/modules/_about.scss */
+  #about #aboutwrapper div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+/* line 26, ../../../components/sass/modules/_about.scss */
+#about #aboutwrapper div h2 {
+  font-size: 1.3em;
+  line-height: 110%;
+  padding: 10px 0;
+}
+/* line 32, ../../../components/sass/modules/_about.scss */
+#about #aboutwrapper div h3 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+/* line 38, ../../../components/sass/modules/_about.scss */
+#about #aboutwrapper div p {
+  font-size: 1em;
+  line-height: 130%;
+  padding-bottom: 10px;
+}
+/* line 44, ../../../components/sass/modules/_about.scss */
+#about #aboutwrapper div ul {
+  padding-bottom: 10px;
+}
+/* line 47, ../../../components/sass/modules/_about.scss */
+#about #aboutwrapper div ul li {
+  list-style: square;
+  margin-left: 10%;
+  line-height: 115%;
+  margin-bottom: 5px;
+}
+
+/* line 1, ../../../components/sass/modules/_quotes.scss */
+.quote {
+  font: 300 1em/1.5em "Exo 2", "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 30px 0;
+}
+/* line 8, ../../../components/sass/modules/_quotes.scss */
+.quote#rembrandt {
+  background: url("../images/background/quote_rembrandt.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 12, ../../../components/sass/modules/_quotes.scss */
+.quote#escher {
+  background: url("../images/background/quote_escher.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 15, ../../../components/sass/modules/_quotes.scss */
+.quote p {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.quote p:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 1, ../../../components/sass/modules/_skills.scss */
+#skills {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
+  color: #FFFFFF;
+  padding: 20px 0 50px 0;
+}
+/* line 7, ../../../components/sass/modules/_skills.scss */
+#skills h1, #skills h2, #skills h3, #skills h4, #skills h5, #skills h6 {
+  color: #005b82;
+}
+/* line 15, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper h1 {
+  margin: 0 0 20px 0;
+}
+@media (min-width: 650px) {
+  /* line 18, ../../../components/sass/modules/_skills.scss */
+  #skills #skillswrapper section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 22, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section h2 {
+  margin-bottom: 10px;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+#skills #skillswrapper section .column:before, #skills #skillswrapper section .column:after {
+  content: '';
+  display: table;
+}
+/* line 40, ../../../components/sass/_mixins.scss */
+#skills #skillswrapper section .column:after {
+  clear: both;
+}
+/* line 31, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column .skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  background: #5dccf6;
+  height: 30px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 40, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column .skillbar .title {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  color: #FFFFFF;
+  -webkit-box-shadow: inset 0 0 3px 0 #000000;
+  box-shadow: inset 0 0 3px 0 #000000;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 51, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column .skillbar .title span {
+  display: block;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+}
+/* line 59, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column .skillbar .bar {
+  height: 30px;
+  width: 0px;
+  background: #0da6e0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 66, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column .skillbar:nth-last-child(1) {
+  margin-bottom: 0 !important;
+}
+/* line 69, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p {
+  margin-bottom: 10px !important;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+/* line 74, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .perk {
+  font-size: 1em;
+  color: #FFFFFF;
+  background: #5dccf6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  padding: 0 10px;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 3px 0 #000000;
+  box-shadow: inset 0 0 3px 0 #000000;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 88, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .w30 {
+  width: calc(30% - 5px);
+}
+/* line 89, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .w40 {
+  width: calc(40% - 5px);
+}
+/* line 90, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .w50 {
+  width: calc(50% - 5px);
+}
+/* line 91, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .w60 {
+  width: calc(60% - 5px);
+}
+/* line 92, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .w70 {
+  width: calc(70% - 5px);
+}
+/* line 93, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .left {
+  float: left;
+}
+/* line 94, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p .right {
+  float: right;
+}
+/* line 96, ../../../components/sass/modules/_skills.scss */
+#skills #skillswrapper section .column p:nth-last-child(1) {
+  margin-bottom: 0 !important;
+}
+/* line 104, ../../../components/sass/modules/_skills.scss */
+#skills #bts {
+  margin-top: 20px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#skills #bts:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 960px) {
+  /* line 104, ../../../components/sass/modules/_skills.scss */
+  #skills #bts {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  #skills #bts:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 111, ../../../components/sass/modules/_skills.scss */
+#skills #bts section {
+  padding: 20px;
+  -webkit-box-shadow: inset 0 0 3px 0 #000000;
+  box-shadow: inset 0 0 3px 0 #000000;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+@media (min-width: 0) and (max-width: 400px) {
+  /* line 111, ../../../components/sass/modules/_skills.scss */
+  #skills #bts section {
+    background: url(../images/skills/bts_small.png) #003145;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center 95%;
+    padding-bottom: 130px;
+  }
+}
+@media (min-width: 400px) and (max-width: 650px) {
+  /* line 111, ../../../components/sass/modules/_skills.scss */
+  #skills #bts section {
+    background: url(../images/skills/bts_small.png) #003145;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center 90%;
+    padding-bottom: 180px;
+  }
+}
+@media (min-width: 650px) and (max-width: 960px) {
+  /* line 111, ../../../components/sass/modules/_skills.scss */
+  #skills #bts section {
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/skills/bts_wide.png) #003145;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-right: 300px;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  #skills #bts section:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 960px) {
+  /* line 111, ../../../components/sass/modules/_skills.scss */
+  #skills #bts section {
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/skills/bts_wide.png) #003145;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    padding-right: 300px;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  #skills #bts section:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 148, ../../../components/sass/modules/_skills.scss */
+#skills #bts section h2 {
+  color: #0da6e0;
+}
+
+/* line 1, ../../../components/sass/modules/_projects.scss */
+#projects {
+  color: #003145;
+  background: #FFFFFF;
+  padding: 20px 0 0 0;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+#projects:before, #projects:after {
+  content: '';
+  display: table;
+}
+/* line 40, ../../../components/sass/_mixins.scss */
+#projects:after {
+  clear: both;
+}
+/* line 7, ../../../components/sass/modules/_projects.scss */
+#projects header {
+  margin-bottom: 20px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#projects header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 960px) {
+  /* line 7, ../../../components/sass/modules/_projects.scss */
+  #projects header {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  #projects header:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 15, ../../../components/sass/modules/_projects.scss */
+#projects header h2 {
+  margin: 0 0 20px 0;
+  color: #005b82;
+}
+/* line 22, ../../../components/sass/modules/_projects.scss */
+#projects .project {
+  overflow: hidden;
+}
+/* line 24, ../../../components/sass/modules/_projects.scss */
+#projects .project h2 {
+  padding: 20px 0;
+  color: #005b82;
+}
+/* line 29, ../../../components/sass/modules/_projects.scss */
+#projects .project .preview {
+  padding: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 3.33333%;
+  padding-right: 3.33333%;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 29, ../../../components/sass/modules/_projects.scss */
+  #projects .project .preview {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+/* line 35, ../../../components/sass/modules/_projects.scss */
+#projects .project .preview img {
+  width: 100%;
+}
+/* line 39, ../../../components/sass/modules/_projects.scss */
+#projects .project .info {
+  padding: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 3.33333%;
+  padding-right: 3.33333%;
+}
+/* line 41, ../../../components/sass/modules/_projects.scss */
+#projects .project .info a {
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #0da6e0;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 39, ../../../components/sass/modules/_projects.scss */
+  #projects .project .info {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+/* line 58, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../images/background/irongrip.png");
+  padding: 20px 0;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#projects #jethrography:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 62, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section {
+  color: #FFFFFF;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#projects #jethrography section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 960px) {
+  /* line 62, ../../../components/sass/modules/_projects.scss */
+  #projects #jethrography section {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  #projects #jethrography section:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 75, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section img {
+  width: 200px;
+  margin: 10px 0;
+}
+/* line 79, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section .video {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#projects #jethrography section .video:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 79, ../../../components/sass/modules/_projects.scss */
+  #projects #jethrography section .video {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 66, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  #projects #jethrography section .video:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  #projects #jethrography section .video:nth-child(2n + 2) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 86, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section .video .video-container {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+/* line 95, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section .video .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 104, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section .info {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#projects #jethrography section .info:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 104, ../../../components/sass/modules/_projects.scss */
+  #projects #jethrography section .info {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 66, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  #projects #jethrography section .info:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  #projects #jethrography section .info:nth-child(2n + 2) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 111, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section .info a {
+  color: #000000;
+}
+/* line 115, ../../../components/sass/modules/_projects.scss */
+#projects #jethrography section .info h2 {
+  color: #0da6e0;
+  margin-bottom: 20px;
+}
+
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+/* clearfix */
+/* line 7, ../../../components/sass/modules/_carousel.scss */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* display none until init */
+/* line 16, ../../../components/sass/modules/_carousel.scss */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+
+/* line 22, ../../../components/sass/modules/_carousel.scss */
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 27, ../../../components/sass/modules/_carousel.scss */
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* line 32, ../../../components/sass/modules/_carousel.scss */
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* line 40, ../../../components/sass/modules/_carousel.scss */
+.owl-carousel .owl-item {
+  float: left;
+}
+
+/* line 43, ../../../components/sass/modules/_carousel.scss */
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+/* line 47, ../../../components/sass/modules/_carousel.scss */
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* mouse grab icon */
+/* line 57, ../../../components/sass/modules/_carousel.scss */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+/* line 62, ../../../components/sass/modules/_carousel.scss */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+/*---------------------------------THEME----------------------------------*/
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+/* line 80, ../../../components/sass/modules/_carousel.scss */
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+/* line 87, ../../../components/sass/modules/_carousel.scss */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* line 104, ../../../components/sass/modules/_carousel.scss */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+/* line 112, ../../../components/sass/modules/_carousel.scss */
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+
+/* line 117, ../../../components/sass/modules/_carousel.scss */
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+
+/* line 130, ../../../components/sass/modules/_carousel.scss */
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+/* line 138, ../../../components/sass/modules/_carousel.scss */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+/* line 150, ../../../components/sass/modules/_carousel.scss */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+
+/* line 2, ../../../components/sass/modules/_contact.scss */
+#contact {
+  padding: 0;
+  color: #FFFFFF;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 8, ../../../components/sass/modules/_contact.scss */
+#contact #googlemaps {
+  /*height: 100%; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 0;*/
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+/* line 16, ../../../components/sass/modules/_contact.scss */
+#contact .overlay {
+  position: relative;
+  z-index: 1;
+  /* The z-index should be higher than Google Maps */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+/* line 35, ../../../components/sass/_mixins.scss */
+#contact .overlay:before, #contact .overlay:after {
+  content: '';
+  display: table;
+}
+/* line 40, ../../../components/sass/_mixins.scss */
+#contact .overlay:after {
+  clear: both;
+}
+/* line 27, ../../../components/sass/modules/_contact.scss */
+#contact .overlay .content {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+#contact .overlay .content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 27, ../../../components/sass/modules/_contact.scss */
+  #contact .overlay .content {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  #contact .overlay .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 39, ../../../components/sass/modules/_contact.scss */
+#contact .overlay .content h2 {
+  color: #FFFFFF;
+  padding: 10px 0;
+}
+/* line 43, ../../../components/sass/modules/_contact.scss */
+#contact .overlay .content p {
+  padding: 10px 0 30px 0;
+}
+/* line 47, ../../../components/sass/modules/_contact.scss */
+#contact .overlay .content ul li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 650px) {
+  /* line 47, ../../../components/sass/modules/_contact.scss */
+  #contact .overlay .content ul li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+/* line 57, ../../../components/sass/modules/_contact.scss */
+#contact .overlay .content ul li a {
+  color: #FFFFFF;
+}
+
+/* line 1, ../../../components/sass/modules/_footer.scss */
+footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #333333;
+  color: #4d4d4d;
+  padding: 15px 0;
+  text-align: center;
+  height: 120px;
+}
+/* line 12, c:/Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+footer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 8, ../../../components/sass/modules/_footer.scss */
+footer a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: .7em;
+  font-weight: 300;
+}
+/* line 13, ../../../components/sass/modules/_footer.scss */
+footer a img {
+  height: 50px;
+}
+/* line 16, ../../../components/sass/modules/_footer.scss */
+footer a p {
+  padding: 0;
+}

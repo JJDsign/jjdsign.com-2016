@@ -14,3 +14,20 @@
 @import "susy";
 @import "breakpoint";
 
+//Core Partials
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+//Import Modules
+@import "modules/intro";
+@import "modules/navigation";
+@import "modules/welcome";
+@import "modules/about";
+@import "modules/quotes";
+@import "modules/skills";
+@import "modules/projects";
+@import "modules/carousel";
+@import "modules/contact";
+@import "modules/footer";

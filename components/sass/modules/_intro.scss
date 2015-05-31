@@ -1,0 +1,48 @@
+header {
+	.fullheight { 
+		@include backImageFixed('../images/background/intro.jpg');
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
+		.hgroup {
+			width:100%;
+			height:100%;
+			h1 {
+				margin-top:20px;
+				color: $blue;
+				font-size: 3em;
+				font-weight: $heavy;
+				line-height: .8em;
+				text-align: center;
+			@include text-shadow($mediumblue 2px 2px 0px);
+			} //h1
+			h2 {
+				display: block;
+				color: $blue;
+				width: 100%;
+				max-width: 300px;
+				margin: 0 auto;
+				text-align: center;
+				border-top: 1px solid $blue;
+				margin-top: 25px;
+				padding:10px;
+				//background: rgba($dark, .5);
+				font-size: 1.3em;
+			} //h2
+			p {
+				margin:10px 0;
+				text-align: center;
+				bottom:0;
+				position: absolute;
+				width: 100%;
+				a {
+					i {
+						color: $blue; 
+			@include text-shadow($mediumblue 3px 3px 0px);
+					}
+				} //img
+			} //p
+		} //hgroup
+	} //fullheight 
+	
+} //header

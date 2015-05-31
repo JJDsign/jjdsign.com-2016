@@ -1,0 +1,57 @@
+#about {
+	@include background-image(linear-gradient(top, darken($light, 10), $light));
+	color: $ColorAboutText;
+	padding: 20px 0 50px 0;
+	#{headings()} {
+		color: $colorAboutHeadings;
+	} //all headings
+
+	.heading { 
+		h1 {
+			font-size: 2em;
+			font-weight: $thin;
+		}
+	}
+
+	#aboutwrapper {
+		overflow: hidden;
+		@include clearfix; 
+
+		div {
+			@include breakpoint($small) {
+				@include span(1 of 2);
+			}
+			@include breakpoint(450px $small) {}
+
+			h2 { 
+				font-size: 1.3em;
+				line-height: 110%;
+				padding: 10px 0;
+			} //h2
+
+			h3 {
+				font-size: 1.2em;
+				font-weight: $thin;
+				margin-bottom:5px;
+			}
+
+			p {
+				font-size: 1em;
+				line-height: 130%;
+				padding-bottom: 10px;
+			} //p
+
+			ul { 
+				padding-bottom: 10px;
+				 
+				li {
+					list-style: square;
+					margin-left: 10%;
+					line-height: 115%;
+					margin-bottom: 5px;
+				} //li
+			} //ul
+		} //section
+	} //aboutwrapper
+	
+}

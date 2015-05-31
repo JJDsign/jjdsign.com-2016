@@ -1,0 +1,65 @@
+//font declaration
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,600,800);
+@import url(http://fonts.googleapis.com/css?family=Economica:400italic,700italic);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@include border-box-sizing; //uses border box sizing like the old IE
+
+$susy: (
+	columns: 12,
+	container: 60em,
+	gutters: 1/4,
+	gutter-position: inside
+); //http://susy.oddbird.net/
+
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
+
+//add color palette 
+$dark			: #000000;
+$light			: #FFFFFF;
+  
+$darkblue			: #003145;
+$mediumblue			: #005b82;
+$blue			: #0da6e0;
+
+
+//main color scheme
+$backgroundColor	: lighten($dark, 10);
+$typeDefault		: $light;
+$navBackground		: $blue;
+$colorNavText		: darken($light,10);
+$colorNavTextHover	: darken($light,10);
+$colorNavTextActive	: $light;
+$colorAboutHeadings : $mediumblue;
+$ColorAboutText     : $darkblue;
+
+$headersubbg		: lighten($dark, 10);
+
+//button state
+$button-active	:lighten($dark, 20);
+$button-hover	:lighten($dark, 40); 
+$circlebar-inset-background: $light; 
+
+// bar colors
+$skillbar-background : lighten($blue,20); 
+$skillbar-color:	$blue;
+
+$fontfamily	: 'Exo 2', 'Helvetica Neue', Arial, sans-serif;			
+$thin		: 300;
+$normal		: 400;
+$bold		: 600;
+$heavy		: 800;
+
+$fontFamilyQuotes	: 'Economica', sans-serif;
+$normalQuote		: 400;
+$boldQuote			: 700;
+
+$headFont	: $thin 1.5em/1.5em $fontfamily;
+$mainFont	: $thin 1em/1.5em $fontfamily;
+$headColor	: lighten($dark, 5); 
+$quoteFont	: $thin 1em/1.5em $fontfamily; 
+
+
+

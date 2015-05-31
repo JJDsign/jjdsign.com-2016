@@ -1,0 +1,19 @@
+.quote {
+	//background:rgba(0, 0, 0, 0.6);
+ 	font: $quoteFont;
+ 	font-style: italic;
+ 	color: $light;
+ 	text-align:center;
+ 	padding: 30px 0;
+	&#rembrandt {  
+		@include backImageFixed('../images/background/quote_rembrandt.jpg');  
+	} //rembrandt 
+
+	&#escher {  
+		@include backImageFixed('../images/background/quote_escher.jpg');  
+	} //escher
+	p {
+		@include container(90%);
+	}
+	
+} 

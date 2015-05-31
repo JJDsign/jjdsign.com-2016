@@ -1,0 +1,130 @@
+#projects {
+	@include clearfix; 
+	color:$darkblue;
+	//@include background-image(linear-gradient(top, darken($light, 20), $light));
+	background:$light;
+	padding:20px 0 0 0;
+	header {
+		margin-bottom:20px;
+		@include container(95%);
+		@include breakpoint($medium) {
+			@include container;
+			//@include pad(1,1);
+			
+		} //breakpoint
+		h2 {
+
+        	margin:0 0 20px 0;
+    		color: $mediumblue;
+		}
+	} //header
+
+	.project {
+		
+		h2 {
+			padding: 20px 0;
+			color: $mediumblue;
+		}
+		overflow: hidden; 
+		.preview {
+			padding:20px;
+			@include span (2 of 3);
+			@include breakpoint (0 $small) {
+				@include span (1 of 1);
+			}
+			img {
+				width:100%;
+			}
+		} 
+		.info {
+			padding:20px;
+			a {
+				border:1px solid $light;
+				padding:10px;
+				color:$light;
+				text-decoration: none;
+				background:$blue;
+				margin-bottom:10px; 
+				display:inline-block;
+			}
+			@include span (1 of 3);
+			@include breakpoint (0 $small) {
+				@include span (1 of 1);
+			}
+		}
+	 
+	}
+
+	#jethrography {
+		@include container(100%);
+		background:url('../images/background/irongrip.png');
+		padding:20px 0;
+		section { 
+			color:$light;
+			@include container(95%);
+			@include border-radius(5px);
+			background:rgba($dark, .3);
+            -webkit-box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.3);
+            box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.3);
+			padding:20px;  
+			@include breakpoint($medium) {
+				@include container;
+
+			}
+			  
+			img {
+				width:200px;
+				margin: 10px 0;
+			} 
+			.video {  
+				@include container(90%);
+				@include breakpoint($small){
+					@include gallery (6 of 12);
+				} 
+				padding: 20px; 
+
+				.video-container {
+            -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+					position:relative;
+					padding-bottom:56.25%;
+					//padding-top:30px;
+					height:0;
+					overflow:hidden;
+					 
+					iframe { 
+						position:absolute;
+						top:0;
+						left:0;
+						width:100%;
+						height:100%;
+					}
+				}
+			}
+			.info {
+				
+				@include container(90%);
+				//@include gallery(1 of 1);  
+				@include breakpoint($small){
+					@include gallery (6 of 12);
+				} 
+				a {
+					color: $dark;
+				}
+
+				h2 {
+					color:$blue;
+					margin-bottom: 20px;
+				} 
+			}
+		}
+	}
+ 
+
+	 
+ 
+
+} //projects
+
+
+
