@@ -16,7 +16,7 @@ var env,
     outputDir,
     sassStyle;
 
-env = 'production'; 
+env = 'production';
 
 if (env==='development') {
   outputDir = 'builds/development/';
@@ -31,12 +31,12 @@ jsSources = [
   'components/scripts/TweenMax.min.js',
   'components/scripts/jquery.scrollmagic.min.js',
   'components/scripts/owl.carousel.min.js',
-  'components/scripts/script.js' 
+  'components/scripts/script.js'
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
 
-gulp.task('js', function() { 
+gulp.task('js', function() {
   gulp.src(jsSources)
     .pipe(concat('script.js'))
     .pipe(browserify())
@@ -56,7 +56,7 @@ gulp.task('compass', function() {
       require: ['susy', 'breakpoint']
     })
     .on('error', gutil.log))
-//    .pipe(gulp.dest( outputDir + 'css'))
+    .pipe(gulp.dest( outputDir + 'css'))
     .pipe(connect.reload())
 });
 

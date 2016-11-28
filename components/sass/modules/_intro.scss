@@ -1,6 +1,6 @@
 header {
-	.fullheight { 
-		@include backImageFixed('../images/background/intro.jpg');
+	.fullheight {
+		@include backImageFixed('../images/background/splash.jpg');
 		@include display-flex();
 		@include align-items(center);
 		@include justify-content(center);
@@ -37,12 +37,12 @@ header {
 				width: 100%;
 				a {
 					i {
-						color: $blue; 
+						color: $blue;
 			@include text-shadow($mediumblue 3px 3px 0px);
 					}
 				} //img
 			} //p
 		} //hgroup
-	} //fullheight 
-	
+	} //fullheight
+
 } //header
